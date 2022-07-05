@@ -7,8 +7,8 @@ h4 {font-family: helvetica; font-size: 120%;}
 ul {font-family: helvetica;font-size: 120%;}
 address {font-family: "Times New Roman", Times, serif; font-style: normal;}
 table {font-family: helvetica;}
-a:visited{font-size: 100%; color: DarkSlateGray;}
-a:link{font-size: 100%; color: DarkOrchid;}
+a:visited{font-size: 100%; color: DarkSlateBlue;}
+a:link{font-size: 100%; color: DarkRed;}
 img {object-fit:cover; border: 0; padding: 0; margin: 1%;}
 div{overflow: auto}
 div.researchbox{background-color: gainsboro; padding: 1%;}
