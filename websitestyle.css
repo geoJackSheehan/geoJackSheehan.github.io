@@ -26,6 +26,7 @@ img.researchimg{float:left;max-width:45%;max-height:100%;}
                 text-align:justify;}
 .right {width: 25%; position: relative; left: 4%;}
 .row:after {content: ""; display: table; clear: both; }
+.column1 {float: left;}
 .left1 {width: 33%;}
 .middle1 {width: 34%;}
 .right1 {width: 33%;}
