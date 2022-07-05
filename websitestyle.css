@@ -5,10 +5,10 @@ h2 {font-family: helvetica; font-size: 160%;}
 h3 {color: black; font-family: helvetica; font-size: 140%;}
 h4 {font-family: helvetica; font-size: 120%;}
 ul {font-family: helvetica;font-size: 120%;}
-address {font-family: "Times New Roman", Times, serif; font-style: normal}
+address {font-family: "Times New Roman", Times, serif; font-style: normal;}
 table {font-family: helvetica;}
-a:visited{font-size: 100%; color: DarkOrchid;}
-a:link{font-size: 100%; color: PaleTurquoise;}
+a:visited{font-size: 100%; color: DarkSlateGray;}
+a:link{font-size: 100%; color: DarkOrchid;}
 img {object-fit:cover; border: 0; padding: 0; margin: 1%;}
 div{overflow: auto}
 div.researchbox{background-color: gainsboro; padding: 1%;}
@@ -16,14 +16,20 @@ p.researchpar{color:black; height:80%;}
 img.researchimg{float:left;max-width:45%;max-height:100%;}
 * {box-sizing: border-box;}
 .column {float: left; padding: 20px;}
-.left {width: 20%;}
+.left {width: 25%;}
 .middle {margin:4px, 4x;
                 padding:20px;
-                width: 60%;
-                height: 110px;
+                width: 50%;
+                height: 750px;
                 overflow-x: hidden;
                 overflow-y: auto;
                 text-align:justify;}
-.right {width: 20%;}
+.right {width: 25%; position: relative; left: 4%;}
 .row:after {content: ""; display: table; clear: both; }
+.left1 {width: 33%;}
+.middle1 {width: 34%;}
+.right1 {width: 33%;}
+.leftplanet {width: 33%;}
+.middleplanet {width: 33%;}
+.rightplanet {width: 33%;}
 @media screen and (max-width: 600px) {.column {width: 100%;}}
