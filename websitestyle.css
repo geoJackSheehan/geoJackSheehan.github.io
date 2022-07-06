@@ -1,7 +1,7 @@
 body {background-color: #577E8F; color: Gainsboro;}
 p {font-family: "Times New Roman", Times, serif; font-size: 120%; word-wrap: break-word; line-height: 140%}
 h1 {font-family: roman; font-size: 5vw; text-align: center; line-height: 5%;}
-h2 {font-family: roman; font-size: 160%;}
+h2 {font-family: roman; font-size: 160%; padding-top: 0px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; margin: 0px;}
 h3 {color: black; font-family: roman; font-size: 140%;}
 h4 {font-family: helvetica; font-size: 120%;}
 ul {font-family: "Times New Roman", Times, serif; font-size: 120%;}
@@ -16,10 +16,10 @@ p.researchpar{color:black; height:80%;}
 img.researchimg{float:left;max-width:45%;max-height:100%;}
 * {box-sizing: border-box;}
 .column {float: left; padding: 20px;}
+.columntest {float: left; padding: 0px;}
+.middletest {width: 50%}
 .left {width: 25%;}
-.middle {margin:4px, 4x;
-                padding:20px;
-                width: 50%;
+.middle {width: 100%;
                 height: 750px;
                 overflow-x: hidden;
                 overflow-y: auto;
