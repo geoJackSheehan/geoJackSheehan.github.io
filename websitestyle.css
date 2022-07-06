@@ -33,4 +33,11 @@ img.researchimg{float:left;max-width:45%;max-height:100%;}
 .leftplanet {width: 33%;}
 .middleplanet {width: 33%;}
 .rightplanet {width: 33%;}
+
+.leftestheader {width: 20%; position: relative;}
+.lefterheader {width: 18%; position: relative;}
+.middleheader {width: 23%; position: relative;}
+.righterheader {width: 20%; position: relative;}
+.rightestheader {width: 19%; position: relative;}
+
 @media screen and (max-width: 600px) {.column {width: 100%;}}
