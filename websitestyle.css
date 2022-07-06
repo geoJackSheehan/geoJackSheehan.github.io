@@ -5,7 +5,7 @@ h2 {font-family: roman; font-size: 160%; padding-top: 0px; padding-right: 0px; p
 h3 {color: black; font-family: roman; font-size: 140%;}
 h4 {font-family: helvetica; font-size: 120%;}
 ul {font-family: "Times New Roman", Times, serif; font-size: 120%;}
-address {font-family: "Times New Roman", Times, serif; font-style: normal;}
+address {font-family: "Times New Roman", Times, serif; font-style: normal; font-size: 120%;}
 table {font-family: helvetica;}
 a:visited{font-size: 100%; color: DarkSlateBlue;}
 a:link{font-size: 100%; color: DarkSlateBlue;}
@@ -16,7 +16,7 @@ p.researchpar{color:black; height:80%;}
 img.researchimg{float:left;max-width:30%;max-height:100%;}
 * {box-sizing: border-box;}
 .column {float: left; padding: 20px;}
-.columntest {float: left; padding: 0px;}
+.columntest {float: left; padding: 0px; display:block;}
 .middletest {width: 50%}
 .left {width: 25%;}
 .middle {width: 100%;
@@ -24,7 +24,7 @@ img.researchimg{float:left;max-width:30%;max-height:100%;}
                 overflow-x: hidden;
                 overflow-y: auto;
                 text-align:justify;}
-.right {width: 20%; position: relative; left: 4%;}
+.right {width: 21%; position: relative; left: 4%;}
 .row:after {content: ""; display: table; clear: both; }
 .column1 {float: left;}
 .left1 {width: 33%;}
@@ -39,5 +39,12 @@ img.researchimg{float:left;max-width:30%;max-height:100%;}
 .middleheader {width: 23%; position: relative;}
 .righterheader {width: 20%; position: relative;}
 .rightestheader {width: 19%; position: relative;}
+
+.leftmargin {width: 25%}
+.leftestheader1 {width: 10%; position: relative;}
+.lefterheader1 {width: 9%; position: relative;}
+.middleheader1 {width: 11%; position: relative;}
+.righterheader1 {width: 10%; position: relative;}
+.rightestheader1 {width: 10%; position: relative;}
 
 @media screen and (max-width: 600px) {.column {width: 100%;}}
