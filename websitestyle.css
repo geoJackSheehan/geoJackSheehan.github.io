@@ -14,6 +14,7 @@ div{overflow: auto}
 div.researchbox{background-color: gainsboro; padding: 1%;}
 p.researchpar{color:black; height:80%;}
 img.researchimg{float:left;max-width:20%;max-height:100%; padding-right: 10px;}
+img.blogimg{float:left;max-width:20%;max-height:100%; padding-right: 10px;}
 * {box-sizing: border-box;}
 .column {float: left; padding: 20px;}
 .columntest {float: left; padding: 0px; display:block;}
@@ -46,5 +47,9 @@ img.researchimg{float:left;max-width:20%;max-height:100%; padding-right: 10px;}
 .middleheader1 {width: 11%; position: relative;}
 .righterheader1 {width: 10%; position: relative;}
 .rightestheader1 {width: 10%; position: relative;}
+
+.leftblog {width: 20%;}
+.middleblog {width: 60%;
+.rightblog {width: 20%;}
 
 @media screen and (max-width: 600px) {.column {width: 100%;}}
