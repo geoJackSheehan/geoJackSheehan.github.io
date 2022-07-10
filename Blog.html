@@ -84,6 +84,81 @@
 				<div class="columntest leftblog">&nbsp;</div>
 				<div class="columntest middleblog">
 					<div class="researchbox">
+					<b><p style="text-align:left; font-size: 140%; color: black;">IRIS Internship Week 4<span style="float:right; font-size: 86%; color: #577E8F">28 June 2021 - 2 July 2021</span></p></b>
+					<p class="researchpar">
+<b>Weekly Updates</b><br>
+After learning all about EQcorrscan last week from Clara, this week I got a tutorial on EQTransformer from Lindsay. I'd heard a lot about Lindsay from everyone in the lab, so it was super awesome to finally meet her! She is so kind and patient, evidenced by the fact that she spent three hours troubleshooting a tutorial with me and Mandy that was supposed to only last an hour. EQTransformer is a deep-learning algorithm that identifies earthquakes using a trained model to pick p-waves, s-waves, and detections, as well as identify the probability of each component. Deep-learning is important because frankly there is just too much data out there for seismologists to pick through. As Qiushi explained it to me, we may identify one larger event in an area of the Earth, but miss 10-15 smaller ones within the same region that get drowned out. While these may not seem important in the grand scheme of things, these foreshocks and aftershocks are often important indicators of the cause of the 'quake. However, when you're sifting through thousands of hours of high-frequency data, you just can't find everything. That's where machine-learning comes in: just make your computer do it! (Although I am a little worried about the robot uprising as I sit here literally training a program to be smarter, but that's a problem for the next generations.)
+
+<br><br>
+As the three-hour tutorial with Lindsay would suggest, EQTransformer has been kind of difficult to get a grasp on. One reason for this is that it is a new package, and there are frequent updates. For instance, in the time between Mandy downloading the package and me downloading it, an update came out that made some of my commands defunct. Also we (Lindsay) found a couple small bugs that we (Lindsay) submitted to be fixed. Another reason it's been difficult to get going is my dataset. EQTransformer has been trained on actual earthquakes with real seismogram data, which I don't have. So as I watch Mandy download data successfully and run it through the algorithm, I have continued to troubleshoot. A quick refresher on what makes mine different is that I have six extremely sensitive stations just a few millimeters from a three-millimeter-tall cylinder of Mg2GeO4 that they blast with lasers. Not exactly your typical earthquake scenario! Consequently, my data is much more precise and at a much higher frequency.
+
+<br><br>
+<b>My First Figure!</b><br>
+Last week I posted the very detailed diagram of the experiment from the University of Chicago lab, but this week I am posting my own rendition to help visualize the experiment! It definitely isn't nearly as good as theirs, but its still my first baby figure, my firstborn, you might say. (What?) In it, the red circles are the stations and the blue circle is the sample of Mg2GeO4. There are two stations on each of the x-, y-, and z-axes, all roughly 20 mm from the sample. The size variations in the stations represent how many events each station detected in the single experiment I have run so far.
+
+<br><br>
+Dr. Peng is luckily not quite as sentimental about my figure, so he was able to offer some constructive feedback, including:
+<ul style="color:black;">
+<li>The stations and sample should be different symbols, preferably following the standard practice of using triangles for stations and stars/circles for events.</li>
+<li>Color should be used to denote an additional detail, such as the material of the anvil (tungsten carbide or sintered-diamond).</li>
+<li>The sample should be more accurately sized compared to the stations. In fact, I could even add a 3-D model of the sample shape and a 3-D triangle for the station to help orient them in space.</li>
+<li>Make the font bigger, and explain the size differences in the legend.</li>
+</ul>
+
+<p class="researchpar">I'll make these changes, but I'll always have a soft spot in my heart for this first version. I'll never forget you, irisfig_D2530_0491_stadist.01.png (pronounced 'Kyle').
+				</div>
+
+
+<br><br><br><br>
+
+
+					<div class="researchbox">
+					<b><p style="text-align:left; font-size: 140%; color: black;">IRIS Internship Week 3<span style="float:right; font-size: 86%; color: #577E8F">21 June 2021 - 25 June 2021</span></p></b>
+					<p class="researchpar">
+<b>Weekly Updates</b><br>
+This week has done so much for my self-confidence in the lab! I saw the dataset that I will be working on for the rest of the summer for the first time, and I am finally comfortable navigating the remote softwares and servers in Dr. Peng's lab. It has been a slow start for sure, but a very comprehensive one. This week, I got a tutorial on template-matching techniques from two of Dr. Peng's grad students, Qiushi and Clara. Interestingly, Clara was also an IRIS intern in Dr. Peng's lab as an undergrad. It's very motivating to see real examples of interns benefiting from their experiences or getting offers. Also this week, I spent a day learning how to use Jupyter Notebooks. They're something we've had in classes before, but I've always sort of done just enough to avoid having to really understand what they are and how they work. I've just always had a feeling I probably wouldn't like them. Now that I actually know how to use them, I can say with certainty that I do not like them. (They're actually very handy, but opening my notebooks through the Geophysics server here requires three different passcodes on three different computers, so I will be filing my Jupyter knowledge away for another time.)
+
+<br><br>
+Looking forward to next week, I'm starting to plan for my next coding project. After spending much of last week developing my p-wave arrival time code, this week was all about repurposing it for my actual data set. I'm going home this weekend with the goal to figure out how to apply the code more generally to continuous waveform files, in order to prepare for data manipulation on my actual dataset next week. The biggest issue I've run into with this is that the data files I'm working with are too big for my computer to handle. In fact, they're too big for me to even download into my own directory on the geophysics server at Georgia Tech! Because of this, I have to create some python code to read very small chunks of the continuous data into my directory. How do I pick the chunks? Template matching! Using an obspy function called eqcorrscan, I should be able to identify events within the data without having to download it. Then, I'll be able to take those smaller, more manageable packages and identify p-wave arrivals and all that fun stuff.
+
+<br><br>
+Before the internship, I'll admit I was concerned about what kind of intern I would be. Would I be a counts-down-the-seconds-till lunch kind of intern? A struggles-to-wake-up-on-time intern? It turns out, I am a will-forget-to-eat-or-go-home-because-the-work-is-so-fascinating intern! This is honestly a huge relief. (But also I do need to be better at regulating my schedule so I have healthy meal times and work hours—one of my summer goals!) Already, I've definitely learned about myself and how I handle pressures and problems that are not school-related. This has been really good for me, because even in areas I've struggled, I now know how to improve. One of my biggest life deficiencies coming into this program was my lack of experience outside of school. I couldn't really picture myself at a job, but now I'm starting to be able to! Also, at the bottom of the post I've added a picture of my workspace and a cool penguin I saw on the wall in one of the hallways here! (If you look closely you can see my co-intern, Mandy, in my workspace picture.)
+
+<br><br>
+<b>Looking Forward</b><br>
+As part of IRIS, we have weekly assignments and cohort meetings on various topics. This week's meeting was presented by our resident grad student advisor, Em! They were amazing, helping paint a realistic picture of grad school, getting us excited, while also cautioning us on what we need to know ahead of time. They gave us advice on when and how to reach out to prospective advisors, what type of positions we should be looking for, and overall just gave us a lot of confidence going into this process. Grad school is scary and Em's presentation really made me feel better.
+
+<br><br>
+This week's assignment from IRIS was to create an elevator pitch. I thought this would be easy, but it was actually really difficult! I already had an elevator pitch recorded from a competition at the Houston Students in Geosciences Expo last year, but when I rewatched it I did not like it at all. Looking back, it felt like I was just reading my resume, which is not at all what I think an elevator pitch should be. I want my elevator pitch to be something that people associate with me. It shouldn't cram every little detail about my experiences in, but should show who I am. It's more of a personal statement than anything else. I'm looking forward to continuing to refine it ahead of AGU, where hopefully I'll get to give it to a few potential grad school advisors! I think besides situations like that, it will also be beneficial to me, personally. The work that goes into an elevator pitch will help me figure out how I want to present myself, and what I consider most important about my experiences. If nothing else, it will help me better understand my own story.
+				</div>
+
+
+<br><br><br><br>
+
+
+					<div class="researchbox">
+					<b><p style="text-align:left; font-size: 140%; color: black;">IRIS Internship Week 2<span style="float:right; font-size: 86%; color: #577E8F">14 June 2021 - 18 June 2021</span></p></b>
+					<p class="researchpar">
+<b>Weekly Updates</b><br>
+This week was a little bit (a lot) more intense than the first. Outside of the internship has been a whirlwind, as I got to go to my first NBA playoffs game (go Hawks!) and got a little sick. As far as work goes, I have really been enjoying the IRIS Seismology Skill Building Workshop, especially because whenever I don't know how to do something lab-related I can do a tutorial and still feel productive. So far it feels like everytime I slowly, painstakingly learn something new in lab, it shows up on the next tutorial and makes perfect sense. I'm trying to be more ahead of the game on the tutorials now, so that I can hopefully switch this and learn new tools before I need them in lab! My work has ramped up a bit, and I'm starting to write small bashrc, MATLAB, and Python scripts for various SAC files. My big project this week has been writing a script to add 13,884 P-wave arrival-times to SAC headers on various frequency-time plots.
+
+<br><br>
+<b>My Dataset</b><br>
+My project is slowly becoming clearer. In a very short summary, I am looking at continuous waveform files from lab experiments that are simulating intermediate-depth earthquakes (IDEQs). Most of my work is processing data, turning it into readable audio files, adding to SAC headers, locating and identifying events, and applying frequency filters to separate data from noise. Really I am just generally assisting in making the data more manageable. Meanwhile, Dr. Peng's lab is attempting to clarify whether these laboratory experiments are adequate representations of IDEQs. As the summer progresses and I learn to understand my data more, my goal is to be involved in this part of the process as well. Besides this, I am working on a side project, which is turning seismic data into extremely slowed-down videos that depict fractures forming while playing audio of the cracking. This really excites me because it's such a different way of viewing earthquakes, and a lot more intuitive than the typical squiggles. I think it will have very large educational applications.
+
+<br><br>
+The most important part of my job will be applying filters to distinguish noise from data. The laboratory experiments require the use of electronic equipment placed millimeters from the extremely sensitive sensors, so there is significant noise. Right now, I am learning about the different types of filters, how to automate them, and how to ensure the data I am left with is correct. This data is coming from lab work done at the University of Chicago. Because of this, I do not get to see the experiments happening. While I've seen lots of diagrams and read countless readme files outlining the experiment, it's still a little confusing. A funny moment was on Monday, when I asked Dr. Peng why two machines were placed closer to the sample, and the ensuing conversation confused both of us to the point he emailed the lab PI at U of C to ask. In Dr. Peng's words, "Qiushi (his grad student) and I had this exact same conversation yesterday and we determined that it made sense, but now that you ask it again I'm unsure." Here is a diagram of the experiment: 
+
+<br><br>
+<b>Reflection</b><br>
+IRIS provided us with a self-reflection guide that covers various skills we can gain this summer, in order for us to evaluate ourselves before and after the internship. Looking at the list of skills, I believe the most important skill I can gain this summer is the ability to analyze and evaluate research results. I am good at processing data. Give me a project to turn one thing into something else and I will find a way to make it happen. (Hey, code doesn't have to be pretty, right?) Projects like these always have an end goal that I am aware of. I know what my completed product should look like or do. However, research at its core is about the unknown, and those in charge of the larger project don't have the luxury of knowing the end result—that's what they're trying to find. This summer, I would like to take a step towards this mentality. How do you approach a problem without any idea of its answer? Therefore, along with my data processing work, it is important for me to look forward to the potential results. I know I am not a lab PI and this isn't really my problem to worry about, but this is a critical component of research and one that I want my final poster to accurately reflect.
+				</div>
+
+
+<br><br><br><br>
+
+
+					<div class="researchbox">
 					<b><p style="text-align:left; font-size: 140%; color: black;">IRIS Internship Week 1<span style="float:right; font-size: 86%; color: #577E8F">7 June 2021 - 11 June 2021</span></p></b>
 					<p class="researchpar">
 <b>My first week!</b><br>
