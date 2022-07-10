@@ -13,8 +13,9 @@ img {object-fit:cover; border: 0; padding: 0; margin: 1%;}
 div{overflow: auto}
 div.researchbox{background-color: gainsboro; padding: 1%;}
 p.researchpar{color:black; height:80%;}
+p.datepar{color: #577E8F;}
 img.researchimg{float:left;max-width:20%;max-height:100%; padding-right: 10px;}
-img.blogimg{float:left;max-width:20%;max-height:100%; padding-right: 10px;}
+img.blogimg{float:center;max-width:20%;max-height:100%; padding-right: 10px;}
 * {box-sizing: border-box;}
 .column {float: left; padding: 20px;}
 .columntest {float: left; padding: 0px; display:block;}
@@ -52,4 +53,7 @@ img.blogimg{float:left;max-width:20%;max-height:100%; padding-right: 10px;}
 .middleblog {width: 60%;
 .rightblog {width: 20%;}
 
+.leftpost {width: 40%;}
+.middlepost {width: 50%;
+.rightpost {width: 10%;}
 @media screen and (max-width: 600px) {.column {width: 100%;}}
