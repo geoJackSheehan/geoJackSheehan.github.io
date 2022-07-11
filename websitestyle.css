@@ -58,4 +58,5 @@ img.blogimg{float:center;max-width:20%;max-height:100%; padding-right: 10px;}
 .leftpost {width: 40%;}
 .middlepost {width: 50%;
 .rightpost {width: 10%;}
+
 @media screen and (max-width: 600px) {.column {width: 100%;}}
