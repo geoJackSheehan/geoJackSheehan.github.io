@@ -2,6 +2,7 @@ body {background-color: #577E8F; color: Gainsboro;}
 p {font-family: "Times New Roman", Times, serif; font-size: 120%; word-wrap: break-word; line-height: 140%}
 h1 {font-family: roman; font-size: 5vw; text-align: center; line-height: 5%;}
 h2 {font-family: roman; font-size: 160%; padding-top: 0px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; margin: 0px;}
+h6 {font-family: roman; font-size: 160%; padding-top: 0px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; margin: 0px;}
 h3 {color: black; font-family: roman; font-size: 140%;}
 h4 {font-family: helvetica; font-size: 120%;}
 ul {font-family: "Times New Roman", Times, serif; font-size: 120%; line-height: 140%}
@@ -25,6 +26,7 @@ img.blogimg5{float:left;max-width:60%;max-height:100%; padding-right: 10px;}
 .row1 {margin-top: -20px;}
 .row2 {margin-top: -40px}
 .columntest {float: left; padding: 0px; display:block;}
+.different {margin-top: 0; padding-left: 60px;}
 .middletest {width: 50%}
 .left {width: 25%;}
 .middle {width: 100%;

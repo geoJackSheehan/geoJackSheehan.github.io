@@ -63,6 +63,7 @@
 
 			<div class="row">
 				<div class="column left">
+				<h2>Blog Posts</h2>
 				</div>
 				<div class="column middletest">
 				<div class="row">
@@ -87,10 +88,21 @@
 				</div>
 			</div>
 			<div class="row1">
-				<div class="columntest leftblog">&nbsp;</div>
+				<div class="columntest leftblog">&nbsp;
+				<ul class="different" style="max-width: 100%">
+				<li><b><a href="#blogpost8">26/7/21 - 30/7/21</a></b></li>
+				<li><b><a href="#blogpost7">19/7/21 - 23/7/21</a></b></li>
+				<li><b><a href="#blogpost6">12/7/21 - 16/7/21</a></b></li>
+				<li><b><a href="#blogpost5">5/7/21 - 9/7/21</a></b></li>
+				<li><b><a href="#blogpost4">28/6/21 - 2/7/21</a></b></li>
+				<li><b><a href="#blogpost3">21/6/21 - 25/6/21</a></b></li>
+				<li><b><a href="#blogpost2">14/6/21 - 18/6/21</a></b></li>
+				<li><b><a href="#blogpost1">7/6/21 - 11/6/21</a></b></li>
+				</ul>
+				</div>
 				<div class="columntest middleblog">
 				<div class="researchbox">
-					<b><p style="text-align:left; font-size: 140%; color: black;">IRIS Internship Week 8<span style="float:right; font-size: 86%; color: #577E8F">26 July 2021 - 30 July 2021</span></p></b>
+					<b><p id="blogpost8" style="text-align:left; font-size: 140%; color: black;">IRIS Internship Week 8<span style="float:right; font-size: 86%; color: #577E8F">26 July 2021 - 30 July 2021</span></p></b>
 					<p class="researchpar">
 <b>EqTransformer versus Jack: The Knockout!</b><br>
 After last week's prolonged tussle for power with EqTransformer, I approached this week with a little trepidation. Dr. Peng was back from vacation, I had a little over a week until my first research presentation (more on that later), and I was entering the last phase of my internship. The stage was set for what could be the final battle between me and EqT. I got to work early in order to take one last crack at solving the temporal issue in my data from last week before Dr. Peng got in. I sat at my desk, nervous for what would come next. As I went through the seemingly endless steps required to load Jupyter Notebook on the remote geophysics server, I thought back to my past challenges with EqTransformer. How had I solved them? What approaches had proved the most critical? All of my issues had been resolved when I stopped trying to impose my own organization, and instead worked with what EqT was able to provide. First, it was appending my data files to fit EqT's continuous data requirements, rather than changing EqT's input time frame. Then, it was altering my waveforms' metadata to fit the model, rather than changing how EqT read information in. What was the key this time? It suddenly dawned on me. Instead of recalibrating EqTransformer's eight-day output with the original hour-long experiment, I needed to expand the original experiment time to match EqT. This was much, much easier. Essentially, rather than first identifying which EqT P-pick correlated to which manual pick and then subtracting the time difference, I could simply add the constant length of the wavelength files multiplied by the number of the current file to each manual P-wave. For instance, if a manual P-pick occurred in the 10th waveform file, I added the product of 163.8199 seconds (the length of all the waveforms) and 10 (the file iteration) to the P-time. Now, EqTransformer's P-picks were on the same timescale as the adjusted manual picks, and could be directly collated. Quickly, I opened a new Jupyter Notebook and wrote out a new script, which I've attached at the bottom, along with a description of how it works. As luck would have it, Dr. Peng's entire morning was booked with meetings, so I had been gifted some time. Over the next three hours, I worked rapidly to complete the code. Borrowing from my previous attempts and other scripts I'd written, I was able to get it functioning after only three tries. Just as I finished running the script and outputting a basic Venn diagram and histogram of the results, Dr. Peng came in. Seriously, within 2 minutes of saving the last figure, he came in to check in on me and Mandy. I have never felt so proud in my entire life. And that's the story of how I discovered I want to get a PhD! (Kidding, but this rush of adrenaline definitely boosted my excitement to apply to grad school.) What is the moral of this story? Always procrastinate, you do your best work five minutes before its due.
@@ -131,7 +143,7 @@ The two figures below were created using the results from the code above. The hi
 
 
 				<div class="researchbox">
-					<b><p style="text-align:left; font-size: 140%; color: black;">IRIS Internship Week 7<span style="float:right; font-size: 86%; color: #577E8F">19 July 2021 - 23 July 2021</span></p></b>
+					<b><p id="blogpost7" style="text-align:left; font-size: 140%; color: black;">IRIS Internship Week 7<span style="float:right; font-size: 86%; color: #577E8F">19 July 2021 - 23 July 2021</span></p></b>
 					<p class="researchpar">
 <b>Weekly Updates</b><br>
 Dr. Peng was on vacation this week and I'm not going to lie, it did sort of feel like when the parent leaves the kids home alone. (Should Mandy and I have thrown a party??) Before I get into the weekly updates, here are just a few random comments:
@@ -163,7 +175,7 @@ To finish this blog post on a slightly more positive note, I learned a lot about
 
 
 				<div class="researchbox">
-					<b><p style="text-align:left; font-size: 140%; color: black;">IRIS Internship Week 6<span style="float:right; font-size: 86%; color: #577E8F">12 July 2021 - 16 July 2021</span></p></b>
+					<b><p id="blogpost6" style="text-align:left; font-size: 140%; color: black;">IRIS Internship Week 6<span style="float:right; font-size: 86%; color: #577E8F">12 July 2021 - 16 July 2021</span></p></b>
 					<p class="researchpar">
 <b>Exploring Atlanta</b><br>
 This past weekend was really the first time I explored Atlanta! I've been planning to do it for ages, but with the internship and the Seismology Skill Building Workshop, I've been so busy the time has really flown by. This Wednesday was actually my halfway point in the program. That's simultaneously exciting and nerve-racking. Michael keeps saying that our progress is logarithmic, so we're just now going to start seeing the real results. This week helped solidify that in my mind. Outside of work, my girlfriend Shruti came to visit me for the weekend! It was really great to see her and show her around ATL. Plus, I finally had an excuse to do all the touristy stuff. But first, I had to show her the lab so that she could visualize what I'm talking about nonstop. We went to the Georgia Aquarium, shopped at Ponce City Market, and checked out some local coffee shops. (If you're in Scottdale, check out Atlanta's Best Coffee - it's a super cool Eritrean shop that has amazing coffee and does not charge for different flavors!) The aquarium here is the largest in the world by number of animals. The objectively coolest exhibit is probably the whale sharks, but my favorites were the jellyfish and the penguins. (The jellyfish because they were so mesmerizing, and the penguins because they're penguins.) Unfortunately, the penguin exhibit was partially closed, so we couldn't crawl through this little tunnel that lets you stand up right next to the penguins at ground level. Still, it was a lot of fun, and I would definitely recommend it! We didn't do the World of Coke because it just seemed kind of meh, but if they had a World of Dr. Pepper.........
@@ -188,7 +200,7 @@ Besides my project, on Wednesday I had the opportunity to watch the interns at G
 
 
 				<div class="researchbox">
-					<b><p style="text-align:left; font-size: 140%; color: black;">IRIS Internship Week 5<span style="float:right; font-size: 86%; color: #577E8F">5 July 2021 - 9 July 2021</span></p></b>
+					<b><p id="blogpost5" style="text-align:left; font-size: 140%; color: black;">IRIS Internship Week 5<span style="float:right; font-size: 86%; color: #577E8F">5 July 2021 - 9 July 2021</span></p></b>
 					<p class="researchpar">
 <b>Weekly Updates</b><br>
 This week was all about three tasks. First and most importantly, get EqTransformer to work! Second, present my research so far to the rest of the IRIS cohort. Third, start using Jupyter notebook. Through all these tasks, I have felt the most successful I have so far in the program. This feels really great, because I am finally starting to see all of my learning coming together. I mean, I didn't even know what bash was when this internship started, and now I can comfortably navigate around a computer without a mouse at all! Plus, I'm beginning to ask better questions. I ask questions constantly—at least 5 times a day—to various people in the lab. (Shoutout to Qiushi, Lindsay, and Mandy for being the best and always stopping to answer them!) Looking back at the type of questions I'm asking, I recognize that I've progressed from confusion to curiosity. I can't stress enough how happy this makes me!! I finally am starting to feel like I belong in this internship program. 
@@ -223,7 +235,7 @@ Jack
 
 
 					<div class="researchbox">
-					<b><p style="text-align:left; font-size: 140%; color: black;">IRIS Internship Week 4<span style="float:right; font-size: 86%; color: #577E8F">28 June 2021 - 2 July 2021</span></p></b>
+					<b><p id="blogpost4" style="text-align:left; font-size: 140%; color: black;">IRIS Internship Week 4<span style="float:right; font-size: 86%; color: #577E8F">28 June 2021 - 2 July 2021</span></p></b>
 					<p class="researchpar">
 <b>Weekly Updates</b><br>
 After learning all about EQcorrscan last week from Clara, this week I got a tutorial on EqTransformer from Lindsay. I'd heard a lot about Lindsay from everyone in the lab, so it was super awesome to finally meet her! She is so kind and patient, evidenced by the fact that she spent three hours troubleshooting a tutorial with me and Mandy that was supposed to only last an hour. EqTransformer is a deep-learning algorithm that identifies earthquakes using a trained model to pick p-waves, s-waves, and detections, as well as identify the probability of each component. Deep-learning is important because frankly there is just too much data out there for seismologists to pick through. As Qiushi explained it to me, we may identify one larger event in an area of the Earth, but miss 10-15 smaller ones within the same region that get drowned out. While these may not seem important in the grand scheme of things, these foreshocks and aftershocks are often important indicators of the cause of the 'quake. However, when you're sifting through thousands of hours of high-frequency data, you just can't find everything. That's where machine-learning comes in: just make your computer do it! (Although I am a little worried about the robot uprising as I sit here literally training a program to be smarter, but that's a problem for the next generations.)
@@ -254,7 +266,7 @@ Dr. Peng is luckily not quite as sentimental about my figure, so he was able to 
 
 
 					<div class="researchbox">
-					<b><p style="text-align:left; font-size: 140%; color: black;">IRIS Internship Week 3<span style="float:right; font-size: 86%; color: #577E8F">21 June 2021 - 25 June 2021</span></p></b>
+					<b><p id="blogpost3" style="text-align:left; font-size: 140%; color: black;">IRIS Internship Week 3<span style="float:right; font-size: 86%; color: #577E8F">21 June 2021 - 25 June 2021</span></p></b>
 					<p class="researchpar">
 <b>Weekly Updates</b><br>
 This week has done so much for my self-confidence in the lab! I saw the dataset that I will be working on for the rest of the summer for the first time, and I am finally comfortable navigating the remote softwares and servers in Dr. Peng's lab. It has been a slow start for sure, but a very comprehensive one. This week, I got a tutorial on template-matching techniques from two of Dr. Peng's grad students, Qiushi and Clara. Interestingly, Clara was also an IRIS intern in Dr. Peng's lab as an undergrad. It's very motivating to see real examples of interns benefiting from their experiences or getting offers. Also this week, I spent a day learning how to use Jupyter Notebooks. They're something we've had in classes before, but I've always sort of done just enough to avoid having to really understand what they are and how they work. I've just always had a feeling I probably wouldn't like them. Now that I actually know how to use them, I can say with certainty that I do not like them. (They're actually very handy, but opening my notebooks through the Geophysics server here requires three different passcodes on three different computers, so I will be filing my Jupyter knowledge away for another time.)
@@ -280,7 +292,7 @@ This week's assignment from IRIS was to create an elevator pitch. I thought this
 
 
 					<div class="researchbox">
-					<b><p style="text-align:left; font-size: 140%; color: black;">IRIS Internship Week 2<span style="float:right; font-size: 86%; color: #577E8F">14 June 2021 - 18 June 2021</span></p></b>
+					<b><p id="blogpost2" style="text-align:left; font-size: 140%; color: black;">IRIS Internship Week 2<span style="float:right; font-size: 86%; color: #577E8F">14 June 2021 - 18 June 2021</span></p></b>
 					<p class="researchpar">
 <b>Weekly Updates</b><br>
 This week was a little bit (a lot) more intense than the first. Outside of the internship has been a whirlwind, as I got to go to my first NBA playoffs game (go Hawks!) and got a little sick. As far as work goes, I have really been enjoying the IRIS Seismology Skill Building Workshop, especially because whenever I don't know how to do something lab-related I can do a tutorial and still feel productive. So far it feels like over time I slowly, painstakingly learn something new in lab, it shows up on the next tutorial and makes perfect sense. I'm trying to be more ahead of the game on the tutorials now, so that I can hopefully switch this and learn new tools before I need them in lab! My work has ramped up a bit, and I'm starting to write small bashrc, MATLAB, and Python scripts for various SAC files. My big project this week has been writing a script to add 13,884 P-wave arrival-times to SAC headers on various frequency-time plots.
@@ -303,7 +315,7 @@ IRIS provided us with a self-reflection guide that covers various skills we can 
 
 
 					<div class="researchbox">
-					<b><p style="text-align:left; font-size: 140%; color: black;">IRIS Internship Week 1<span style="float:right; font-size: 86%; color: #577E8F">7 June 2021 - 11 June 2021</span></p></b>
+					<b><p id="blogpost1" style="text-align:left; font-size: 140%; color: black;">IRIS Internship Week 1<span style="float:right; font-size: 86%; color: #577E8F">7 June 2021 - 11 June 2021</span></p></b>
 					<p class="researchpar">
 <b>My first week!</b><br>
 This week I started my internship in Dr. Peng's computational geophysics lab at Georgia Tech. On Sunday I made the 9-hour drive from STL to ATL, and moved into the apartment above the garage of my dad's house. I was a little nervous about this living arrangement at first, but it's actually been very nice. I am able to operate on my own schedule, but can still see my little brother and my dogs when I need to destress. The only thing I've had trouble with so far is waking up in the morning, but that's nothing new! Overall, the transition to Atlanta and working life has been easier than I thought it would be, if not perfect.
