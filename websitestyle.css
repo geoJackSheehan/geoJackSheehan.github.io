@@ -57,6 +57,11 @@ img.blogimg5{float:left;max-width:60%;max-height:100%; padding-right: 10px;}
 .righterheader1 {width: 10%; position: relative;}
 .rightestheader1 {width: 10%; position: relative;}
 
+.leftblogtest {width: 5%;}
+.rightblogtest {width: 5%;}
+.middleblogright {width: 42.5%;}
+.middleblogtest {width: 5%;}
+.middleblogleft {width: 42.5%;}
 .leftblog {width: 20%;}
 .middleblog {width: 60%;
 .rightblog {width: 20%;}
