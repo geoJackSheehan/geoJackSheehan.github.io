@@ -12,7 +12,7 @@ a:visited{font-size: 100%; color: #D2936E;}
 a:link{font-size: 100%; color: #D2936E;}
 img {object-fit:cover; border: 0; padding: 0; margin: 1%;}
 div{overflow: auto}
-div.researchbox{background-color: gainsboro; padding: 1%;}
+div.researchbox{background-color: Gainsboro; padding: 1%;}
 p.researchpar{color:black; height:80%;}
 p.datepar{color: #577E8F;}
 img.researchimg{float:left;max-width:20%;max-height:100%; padding-right: 10px;}
