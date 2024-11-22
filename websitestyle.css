@@ -10,7 +10,7 @@ address {font-family: "Times New Roman", Times, serif; font-style: normal; font-
 table {font-family: helvetica;}
 a:visited{font-size: 100%; color: #D2936E;}
 a:link{font-size: 100%; color: #D2936E;}
-img {object-fit:cover; border: 0; padding: 0; margin: 1%;}
+img:not(.photo-container img) {object-fit: cover; border: 0; padding: 0; margin: 1%;}
 div{overflow: auto}
 div.researchbox{background-color: Gainsboro; padding: 1%;}
 p.researchpar{color:black; height:80%;}
@@ -78,11 +78,110 @@ img.blogimg5{float:left;max-width:60%;max-height:100%; padding-right: 10px;}
 .middleblogtest {width: 5%;}
 .middleblogleft {width: 42.5%;}
 .leftblog {width: 20%;}
-.middleblog {width: 60%;
-.rightblog {width: 20%;}
-
 .leftpost {width: 40%;}
-.middlepost {width: 50%;
+.middleblog {width: 60%;}
+.rightblog {width: 20%;}
+.middlepost {width: 50%;}
 .rightpost {width: 10%;}
+
+
+/* Grid Layout */
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px; /* Space between grid items */
+    padding: 20px 0; /* Consistent top and bottom padding */
+    margin: 0 auto; /* Center the grid */
+    max-width: 80%;
+    box-sizing: border-box; /* Ensure padding is included in size calculations */
+}
+
+.photo-container {
+    position: relative;
+    width: 100%; /* Fill the grid cell */
+    padding-top: 100%; /* Makes the container a square */
+    overflow: hidden; /* Hide cropped parts of the image */
+}
+
+.photo-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fits the square while cropping excess */
+    transition: transform 0.3s ease;
+}
+
+/* Photo Viewer (Hidden by Default) */
+.photo-viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+.photo-viewer:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.viewer-content {
+    text-align: center;
+    max-width: 100%;
+    max-height: 100%;
+    color: white;
+}
+
+.viewer-content img {
+    max-height: 80vh; /* Limit height to 70% of viewport height */
+    max-width: 90vw;  /* Limit width to 90% of viewport width */
+    width: auto;      /* Maintain aspect ratio */
+    height: auto;     /* Maintain aspect ratio */
+    display: block;
+    margin: auto;     /* Center image horizontally and vertically */
+}
+
+.caption {
+    margin: 0;
+    font-size: 120%;
+}
+
+.close-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: Gainsboro;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.viewer-content .close-button {
+    font-size: 120%;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.close-button:hover {
+    background: #ddd;
+}
+
+#close-target {
+    display: block; /* Ensure it’s part of the flow but invisible */
+    height: 0; /* No height */
+    overflow: hidden; /* Prevent any visual space */
+}
+
 
 @media screen and (max-width: 600px) {.column {width: 100%;}}
