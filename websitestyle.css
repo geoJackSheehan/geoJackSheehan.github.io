@@ -55,9 +55,13 @@ img.blogimg5{float:left;max-width:60%;max-height:100%; padding-right: 10px;}
 .left1 {width: 33%;}
 .middle1 {width: 34%;}
 .right1 {width: 33%;}
+.leftplanetl {width: 32.2%;}
+.middleplanetl {width: 32.2%;}
+.rightplanetl {width: 34.6%; overflow: hidden;}
 .leftplanet {width: 33%;}
 .middleplanet {width: 33%;}
-.rightplanet {width: 33%;}
+.rightplanet {width: 33%; overflow: hidden;}
+
 
 .leftestheader {width: 20%; position: relative;}
 .lefterheader {width: 18%; position: relative;}
