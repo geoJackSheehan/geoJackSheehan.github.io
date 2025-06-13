@@ -10,7 +10,7 @@ address {font-family: "Times New Roman", Times, serif; font-style: normal; font-
 table {font-family: helvetica;}
 a:visited{font-size: 100%; color: #D2936E;}
 a:link{font-size: 100%; color: #D2936E;}
-img:not(.photo-container img) {object-fit: cover; border: 0; padding: 0; margin: 1%;}
+img:not(.photo-container img) {object-fit: cover; border: 0; padding: 0; margin: 0%;}
 div{overflow: auto}
 div.researchbox{background-color: Gainsboro; padding: 1%;}
 p.researchpar{color:black; height:80%;}
@@ -95,7 +95,6 @@ img.blogimg5{float:left;max-width:60%;max-height:100%; padding-right: 10px;}
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px; /* Space between grid items */
-    padding: 20px 0; /* Consistent top and bottom padding */
     margin: 0 auto; /* Center the grid */
     max-width: 80%;
     box-sizing: border-box; /* Ensure padding is included in size calculations */
@@ -185,6 +184,38 @@ img.blogimg5{float:left;max-width:60%;max-height:100%; padding-right: 10px;}
     display: block; /* Ensure it’s part of the flow but invisible */
     height: 0; /* No height */
     overflow: hidden; /* Prevent any visual space */
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.tooltip img {
+    display: block;
+    overflow: hidden;
+}
+
+.tooltip-text {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    font-size: 11px;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
 }
 
 
