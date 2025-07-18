@@ -10,12 +10,12 @@ address {font-family: "Times New Roman", Times, serif; font-style: normal; font-
 table {font-family: helvetica;}
 a:visited{font-size: 100%; color: #D2936E;}
 a:link{font-size: 100%; color: #D2936E;}
-img:not(.photo-container img) {object-fit: cover; border: 0; padding: 0; margin: 0%;}
+img:not(.photo-container img):not(.researchimg) {object-fit: cover; border: 0; padding: 0; margin: 0%;}
 div{overflow: auto}
 div.researchbox{background-color: Gainsboro; padding: 1%;}
 p.researchpar{color:black; height:80%;}
 p.datepar{color: #577E8F;}
-img.researchimg{float:left;max-width:20%;max-height:100%; padding-right: 10px;}
+img.researchimg{float:left;max-width:20%;max-height:100%; margin-left: auto; margin-right: 10px;}
 img.blogimg{display: block; margin-left: auto; margin-right: auto; width: 80%;}
 img.blogimg2{display: block; margin-left: auto; margin-right: auto; width: 40%;}
 img.blogimg3{display: block; margin-left: auto; margin-right: auto; width: 30%;}
