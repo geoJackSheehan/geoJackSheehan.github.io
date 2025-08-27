@@ -218,5 +218,21 @@ img.blogimg5{float:left;max-width:60%;max-height:100%; padding-right: 10px;}
     opacity: 1;
 }
 
+/* Background click area */
+.photo-viewer .overlay-close {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: block;
+  z-index: 1; /* sits behind the viewer-content */
+}
+
+/* Content box stays above background */
+.photo-viewer .viewer-content {
+  position: relative;
+  z-index: 2;
+}
+
+
 
 @media screen and (max-width: 600px) {.column {width: 100%;}}
