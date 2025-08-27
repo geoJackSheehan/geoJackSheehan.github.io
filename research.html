@@ -112,8 +112,8 @@
                 <li><a href="#research2">Qualifying Exam</a></li>
                 <li>Laser Heating System</li>
                 <li><a href="#research3">Piston Cylinder</a></li>
+                <li><a href="#research4">Labquakes and Machine Learning</a></li>
                 <li>Animations and Figures</li>
-                <li>Acoustic Emissions and Machine Learning</li>
 				</ul>
 				</div>
 			<div class="columntest middleblog">
@@ -148,7 +148,7 @@ With all this in mind, I chose to make my quals report more similar to a funding
 You can find my full qualifying exam proposal below: 
                         <p align = "center">
   <iframe src="pdfjs-5.3.31-dist/web/viewer.html?file=../../sheehan_quals_proposal.pdf"
-          width="60%" height="770px">
+          width="90%" height="770px">
   </iframe>
                         </p>
 				</div>
@@ -164,7 +164,55 @@ While this press used to contribute to Bridgman's discovery of countless polymor
 
 When I joined the lab, it had been so long since anyone had needed to use the piston-cylinder that everyone who had used it had graduated. We were then faced with the silly and laborious proposition of having to relearn how to use our own press. During this process, I made the manual below to try to ensure that this would never happen again. It goes through all the steps in excruciating detail, from making your sample cell assembly to building the stack to maintaining the press. This was my first "project" in grad school, so I am extremely sentimentally attached to it. Although this is designed with our specific setup in mind, I am putting it here in the hope that maybe someday someone will find it valuable when they are scouring the internet for outdated EUROTHERM control panel manuals or ENERPAC oil changing instructions the way I was. Every time we get a new student, I give them this manual and leave them alone to figure out all the steps. Afterwards, I update the manual to better explain anything that they found confusing. I'll keep updating this version here to reflect those changes! All diagrams, photos, and instructions are by me. The Replacing Parts page is under construction.
                     <p align = "center">
-                        <iframe src="pdfjs-5.3.31-dist/web/viewer.html?file=../../pc_manual_update.pdf" width="60%" height="770px"></iframe>
+                        <iframe src="pdfjs-5.3.31-dist/web/viewer.html?file=../../pc_manual_update.pdf" width="90%" height="770px"></iframe>
+                    </p>
+                </div>
+                
+<br><br><br><br>
+                
+                <div class="researchbox">
+                    <b><p id="research4" style="text-align:left; font-size: 140%; color: black;">Laboratory Earthquakes and Machine Learning</p></b>
+                    <a href="https://link.springer.com/article/10.1186/s40623-025-02237-2" target="_blank"><b><i><p id="research4" style="text-align:left; font-size: 180%;">Paper out now!! Read it here in the special edition of Earth, Planets and Space!!!</p></b></i></a>
+                                      <div align="center">
+                    <a href="https://link.springer.com/article/10.1186/s40623-025-02237-2" target="_blank"><img class="blogimg" src="paperheader.png" alt="Photo 16" class="photo"></a>
+                    </div>
+                    <p class="researchpar">
+<b>My Story</b><br>                     
+This was my very first research project ever. :) My college experience was a little rocky. I struggled in classes, switched majors, struggled more, switched majors again, and struggled even more. I was scared that I wasn't smart enough to major in the hard sciences, and consequently I struggled to find classes I was interested in. Eventually, I ended up in Earth, Environmental, and Planetary Sciences because it allowed me to combine different interests in STEM without having to pick a particular field. Yet I still struggled to nail down a concentration. First I was convinced I was going to specialize in geology, then environmental science, then geochemistry, and then whatever else I was currently learning about. It wasn't until spring of my third year when my structures class took a field trip to Southern California to study the Punchbowl Fault that I found my first true passion. Staring at a thin line of ultracataclasite running through the sandstone bedrock, I realized for the first time the true magnitude of Earth's tectonic movements. In that moment I decided to concentrate in geophysics. That summer I applied to several seismology REUs, but I was not accepted. I had no research experience, and my grades did not reflect a strong affinity for math, coding, or really anything. 
+<br><br>
+However, this was the catalyst I needed; the next year I did the scariest two thing I did in all of college: I reached out to professors for research opportunities, and asked for help in my classes when I needed it. I spent the next two semesters working in Dr. Mark Torres’ biogeochemistry lab at Rice, calculating the ages of riverbeds using erosion from small waterfalls called knickpoints as a proxy for age. Despite not feeling the same overwhelming interest in this topic that I felt for earthquakes, I cherished my first research experience, and that work remains very dear to me. That fall was also my first 4.0 semester, and in the spring I reapplied and was accepted to two REUs: the Southern California Earthquake Center (SCEC) and the Incorporated Research Institutions for Seismology (IRIS) programs.
+<br><br>
+Through SCEC, I worked virtually with Dr. Valerie Sahakian at the University of Oregon to compare peak ground displacement models to standard strong motion accelerometer data. But it was my project with IRIS and Dr. Zhigang Peng at Georgia Tech where I truly developed my passion for science, learning how to perform independent research and communicate scientific results in academic and colloquial contexts. This is also where I was introduced to high P–T experiments, scientific computing, and the field of mineral physics. This is that project.
+<br><br>
+For more details about the stuff I did specifically during that summer internship, check out my posts on the <a href="https://dev.iris.edu/hq/internship/blog/user/564" target="_blank">IRIS Blog</a> or on my <a href="Blog.html">Blog Page</a>. Below is a breakdown of the project as a whole, taken from my <a href="https://communities.springernature.com/posts/listening-to-labquakes-with-machine-learning?channel_id=behind-the-paper" target="_blank">"Behind the Paper" article</a>.
+<br><br>  
+<b>Labquakes and Acoustic Emissions</b><br>
+Every time a rock cracks, it lets out a tiny, high-frequency pop known as an acoustic emission (AE). These sounds of rock deformation are small-scale versions of the seismic waves produced during earthquakes, making them incredibly useful for studying how and why rocks break and earthquakes occur.<br>
+                        <div align="center">
+                        <img class="blogimg" src="blogpic2.png" hspace=0%>
+                        </div>
+                    <p class="researchpar">
+But here's the catch: laboratory rock deformation experiments can generate thousands of AE signals, and scientists have traditionally had to sort through the data manually. That means combing through days worth of waveforms to identify when and where each mini “earthquake” occurred. That's where machine learning and this study come in.
+<br><br>
+<b>Machine Learning and EQTransformer</b><br>
+In recent years, machine learning has transformed seismology. One popular deep learning model called <a href="https://github.com/smousavi05/EQTransformer" target="_blank">EQTransformer</a> has proven particularly effective. It automatically detects earthquakes and identifies the exact moment a seismic event originates. Models like this work by training on already identified earthquakes, called labeled data. But could a model trained on labeled earthquakes be used to study labquakes?
+<br><br>
+Without any retraining, we applied EQTransformer to two laboratory datasets created during high-pressure experiments that mimic the extreme conditions where earthquakes occur. Our goal was to see if this off-the-shelf  AI could detect AEs just as well as it detects typical earthquakes.
+<br><br>
+<b>Man vs Machine vs Machine</b><br>
+We worked with two datasets, containing in total ~4,500 identified AE events. Because AE signals and traditional earthquakes happen on very different scales, their data can look a little different. We converted the AE data into a format that EQTransformer could understand, adjusting the timing, units, and metadata to make them look like regular earthquake data. Then we ran EQTransformer on both datasets and waited.
+                        <div align="center">
+                        <img class="blogimg" src="blogpic.png" hspace=0%>
+                        </div>
+                    <p class="researchpar">   
+The results were impressive, and almost immediate. On both datasets, EQTransformer detected all of the previously identified events. In addition, it discovered many more that had gone undetected—65% more! In just a fraction of the time, the model detected all of the events that the analysts had, and revealed that the analysts had barely found half the total signals. Even more impressive was the accuracy. EQTransformer's precise picks of when each event originated were almost always within a microsecond of the carefully selected analyst's.
+<br><br>
+When compared to EQTransformer's performance on typical earthquake signals, the results were indistinguishable. We also compared the results to an AI model built specifically for analyzing AEs, called MultiNet. Once again, the results were remarkably similar. While MultiNet did perform slightly better—finding more new events and being less prone to random variation—both AI models were considerably more alike than the analysts' selections. 
+<br><br>
+<b>Why It Matters</b><br>
+This work isn’t just about detecting AEs in labquakes. Our goal is to make earthquake science more scalable, efficient, and accessible. The fact that EQTransformer performed so well without ever being trained on lab data suggests that it could be a powerful tool for scientists who don't have the time or resources to develop custom models, or are just looking for a quick initial analysis. It also highlights the connection between AEs and full-scale earthquakes. As experiments continue to improve and high-resolution laboratory data become more common, AI tools like EQTransformer may be the tool that bridges the gap between experimental and field seismology.
+<br><br>
+To learn more, please check out my <a href="https://link.springer.com/article/10.1186/s40623-025-02237-2" target="_blank">paper</a>!
                     </p>
                 </div>
 
