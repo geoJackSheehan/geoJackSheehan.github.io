@@ -2,16 +2,31 @@ body {background-color: #577E8F; color: Gainsboro;}
 p {font-family: "Times New Roman", Times, serif; font-size: 120%; word-wrap: break-word; line-height: 140%}
 h1 {font-family: roman; font-size: 5vw; text-align: center; line-height: 5%;}
 h2 {font-family: roman; font-size: 160%; padding-top: 0px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; margin: 0px;}
-h6 {font-family: roman; font-size: 160%; padding-top: 0px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; margin: 0px;}
+h6 {font-family: roman; font-size: 190%; padding-top: 0px; padding-right: 0px; padding-bottom: 4px; padding-left: 0px; margin: 0px;}
 h3 {color: black; font-family: roman; font-size: 140%;}
 h4 {font-family: helvetica; font-size: 120%;}
 ul {font-family: "Times New Roman", Times, serif; font-size: 120%; line-height: 140%}
 address {font-family: "Times New Roman", Times, serif; font-style: normal; font-size: 120%;}
 table {font-family: helvetica;}
-a:visited{font-size: 100%; color: #D2936E;}
-a:link{font-size: 100%; color: #D2936E;}
+a:visited{color: #D2936E;}
+a:link{color: #D2936E;}
+a {text-decoration: none;}
+
+h2 a {
+  color: #D2936E;
+  text-decoration: none;
+}
+h2 a:hover {
+  color: #E6A880;
+}
+
+a:hover {text-decoration: underline; /* optional if you still want hover feedback */}
 img:not(.photo-container img):not(.researchimg) {object-fit: cover; border: 0; padding: 0; margin: 0%;}
 div{overflow: auto}
+.pictures-page .row1,
+.pictures-page .middleblog {
+  overflow: visible;
+}
 div.researchbox{background-color: Gainsboro; padding: 1%;}
 p.researchpar{color:black; height:80%;}
 p.datepar{color: #577E8F;}
@@ -55,19 +70,18 @@ img.blogimg5{float:left;max-width:60%;max-height:100%; padding-right: 10px;}
 .left1 {width: 33%;}
 .middle1 {width: 34%;}
 .right1 {width: 33%;}
-.leftplanetl {width: 32.2%;}
-.middleplanetl {width: 32.2%;}
-.rightplanetl {width: 34.6%; overflow: hidden;}
+.leftplanetl {width: 32%;}
+.middleplanetl {width: 32%;}
+.rightplanetl {width: 36%; overflow: hidden;}
 .leftplanet {width: 33%;}
 .middleplanet {width: 33%;}
 .rightplanet {width: 33%; overflow: hidden;}
 
 
-.leftestheader {width: 20%; position: relative;}
-.lefterheader {width: 18%; position: relative;}
-.middleheader {width: 23%; position: relative;}
-.righterheader {width: 20%; position: relative;}
-.rightestheader {width: 19%; position: relative;}
+.leftestheader {width: 15%; position: relative;}
+.lefterheader {width: 32%; position: relative;}
+.righterheader {width: 35%; position: relative;}
+.rightestheader {width: 18%; position: relative;}
 
 .leftmargin {width: 25%}
 .leftestheader1 {width: 10%; position: relative;}
