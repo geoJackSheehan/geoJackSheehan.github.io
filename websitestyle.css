@@ -46,7 +46,7 @@ img.blogimg5{float:left;max-width:60%;max-height:100%; padding-right: 10px;}
 .left {width: 25%;}
 .middle {
     width: 100%;
-    height: 680px; /* Ensure height is set */
+    height: calc(100vh - 100px);
     overflow-x: hidden; /* Prevent horizontal scrolling */
     overflow-y: scroll; /* Always show the vertical scrollbar */
     scrollbar-gutter: stable; /* Reserve space for the scrollbar */
@@ -97,7 +97,26 @@ img.blogimg5{float:left;max-width:60%;max-height:100%; padding-right: 10px;}
 .middleblogleft {width: 42.5%;}
 .leftblog {width: 20%;}
 .leftpost {width: 40%;}
-.middleblog {width: 60%;}
+.middleblog {
+    width: 60%;
+    height: calc(100vh - 80px);
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: scroll; /* Always show the vertical scrollbar */
+    scrollbar-gutter: stable; /* Reserve space for the scrollbar */
+    text-align: justify;
+}
+.middleblog::-webkit-scrollbar {
+    width: 15px; /* Width of the scrollbar */
+}
+
+.middleblog::-webkit-scrollbar-thumb {
+    background: #555; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+.middleblog::-webkit-scrollbar-thumb:hover {
+    background: #444; /* Darker color on hover */
+}
 .rightblog {width: 20%;}
 .middlepost {width: 50%;}
 .rightpost {width: 10%;}
@@ -246,6 +265,8 @@ img.blogimg5{float:left;max-width:60%;max-height:100%; padding-right: 10px;}
   position: relative;
   z-index: 2;
 }
+
+
 
 
 
